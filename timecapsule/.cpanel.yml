@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tcats3/public_html/timecapsule/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    #deploy imgs
+    - /bin/cp -R img $DEPLOYPATH
