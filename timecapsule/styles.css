@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px #060606;
+}
+
+
+.tagline {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.mystery {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mystery-dj {
+    width: 300px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+
+.teaser {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subscription-form input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e91e63;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+footer img {
+    width: 40px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    /* Alternatively, you can set a fixed height */
+    /* height: 50px; */
+}
+footer a {
+    color:aliceblue;
+}
+
+.theater-curtain {
+    position: relative;
+    width: 600px;
+    height: 480px;
+    margin: 0 auto;
+    background: url('theater-curtain.png') no-repeat center center;
+    background-size: cover;
+}
+
+#twitch-embed {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
